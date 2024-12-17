@@ -78,15 +78,22 @@ The training of Hy-Tracker consists of three parts:
 
    i. Create the dataset for YOLO training by running nir_data_processing, rednir_data_processing and vis_data_processing files under the data_processing folder. We used all the training sets plus the first frame of the validation datasets.
 
-   ii. Download the yolo.pt file from this link: [yolo.pt](https://drive.google.com/file/d/1GfZpbcW_5GQP2WVtt2vFIx-SW8pckVJK/view) and put it in pretrained folder
+   ii. Download the yolo.pt file from this link: [yolo.pt](https://drive.google.com/file/d/1GfZpbcW_5GQP2WVtt2vFIx-SW8pckVJK/view) and put it in weights folder.
 
    ii. Run the training.py file to train the Yolo model.
+
+# Tracking
+Download all the weights from the following link: [weights](https://drive.google.com/drive/folders/1FDg8Q4dbWj9UAlD0Bkfy3CL8XOVqch4z?usp=sharing) and put it under the weights folder. 
+
+
 # Results
 |                | AUC    | DP    | link           |
 |----------------|------- |-------|----------------|
 | HOT 2022       | 0.728  | 0.972 | [HOT 2022](https://github.com/aamin0102/HyTracker/tree/main/Results/HOT2022))   |
 | HOT 2023       | 0.642  | 0.847 | [HOT 2023](https://github.com/aamin0102/HyTracker/tree/main/Results/HOT2023)      |
 | HOT 2024       | 0.531  | 0.692 | [HOT 2024](https://github.com/aamin0102/HyTracker/tree/main/Results/HOT2024)   |
+
+
 
 # If this work is helpful to you, please cite it as:
 ```bibtex
