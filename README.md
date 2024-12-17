@@ -83,7 +83,7 @@ The training of Hy-Tracker consists of three parts:
    ii. Run the training.py file to train the Yolo model.
 
 # Tracking
-Download all the weights from the following link: [weights](https://drive.google.com/drive/folders/1FDg8Q4dbWj9UAlD0Bkfy3CL8XOVqch4z?usp=sharing) and put it under the weights folder. 
+Download all the weights from the following link: [weights](https://drive.google.com/drive/folders/1FDg8Q4dbWj9UAlD0Bkfy3CL8XOVqch4z?usp=sharing) and put it under the weights folder after that run the tracking.py.
 
 
 # Results
