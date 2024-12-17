@@ -62,6 +62,28 @@ Project-Name/
 │   │   │   │   │   ├── imgn.jpg
 │   │   │       │   └── groundtruth_rect.txt
 ```
+# Training
+The training of Hy-Tracker consists of three parts:
+
+Band Selection using Hierarchical Attention for Band Selection (HASBS):
+
+i. The HOT2023 dataset consists of three different types of data: vis, nir and rednir. Therefore, we develop three HASBS, one for each type of data.
+
+ii. Run the main file of the band15, band16, and band25 folders under the HASBS folder using the appropriate link to the datasets.
+
+Sequence model using GRU:
+
+i. Prepare the dataset by running the create_dataset.py under GRU_Network using the appropriate link to the datasets.
+
+ii. Run the training.py under the GRU_Network for the sequence model
+
+YOLO training:
+
+i. Create the dataset for YOLO training by running nir_data_processing, rednir_data_processing and vis_data_processing files under the data_processing folder. We used all the training sets plus the first frame of the validation datasets.
+
+ii. Download the yolo.pt file from this link: yolo.pt and put it in pretrained folder
+
+ii. Run the training.py file to train the Yolo model.
 # Results
 |                | AUC    | DP    | link           |
 |----------------|------- |-------|----------------|
