@@ -5,34 +5,12 @@ Our approach leverages the strengths of YOLOv7 for object tracking in hyperspect
 attention for band selection (HAS-BS) that selectively processes and groups the most informative spectral bands, thereby significantly improving detection accuracy. Additionally, we have developed a refined tracker that refines the initial detections by incorporating a classifier and a temporal network using gated recurrent units (GRUs). The classifier distinguishes similar objects, while the temporal network models temporal dependencies across frames for robust performance despite occlusions and scale variations (SVs). Experimental results on hyperspectral benchmark datasets demonstrate the effectiveness of Hy-Tracker in accurately tracking objects across frames and overcoming the challenges inherent in detection-based hyperspectral object tracking (HOT).
 `
 # Dataset
+```
 HOT_2023/
 Project-Name/
 │
 ├── datasets/                           # Main dataset folder
 │   ├── training/                       # Training data
-│   │   ├── false/                      # False color data
-│   │   │   ├── nir/                    # NIR videos
-│   │   │   │   ├── video1/             # First video in NIR
-│   │   │   │   │   ├── img1.jpg        # Image files
-│   │   │   │   │   ├── img2.jpg
-│   │   │   │   │   ├── ......
-│   │   │   │   │   ├── imgn.jpg
-│   │   │   │   │   └── groundtruth_rect.txt  # Ground truth for bounding boxes
-│   │   │   │   ├── video2/             # Second video
-│   │   │   ├── rednir/                 # RED-NIR videos
-│   │   │   │   ├── video1/
-│   │   │   │   │   ├── img1.jpg        # Image files
-│   │   │   │   │   ├── img2.jpg
-│   │   │   │   │   ├── ......
-│   │   │   │   │   ├── imgn.jpg
-│   │   │   │   │   └── groundtruth_rect.txt
-│   │   │   └── vis/              
-│   │   │       ├── video1/
-│   │   │   │   │   ├── img1.jpg        # Image files
-│   │   │   │   │   ├── img2.jpg
-│   │   │   │   │   ├── ......
-│   │   │   │   │   ├── imgn.jpg
-│   │   │       │   └── groundtruth_rect.txt
 │   │   ├── hsi/                        # Hyperspectral data
 │   │   │   ├── nir/                    # NIR videos
 │   │   │   │   ├── video1/             # First video in NIR
@@ -58,29 +36,6 @@ Project-Name/
 │   │   │       │   └── groundtruth_rect.txt
 │   │
 │   ├── validation/                     # Validation data
-│   │   ├── false/
-│   │   │   ├── nir/                    # NIR videos
-│   │   │   │   ├── video1/             # First video in NIR
-│   │   │   │   │   ├── img1.jpg        # Image files
-│   │   │   │   │   ├── img2.jpg
-│   │   │   │   │   ├── ......
-│   │   │   │   │   ├── imgn.jpg
-│   │   │   │   │   └── groundtruth_rect.txt  # Ground truth for bounding boxes
-│   │   │   │   ├── video2/             # Second video
-│   │   │   ├── rednir/                 # RED-NIR videos
-│   │   │   │   ├── video1/
-│   │   │   │   │   ├── img1.jpg        # Image files
-│   │   │   │   │   ├── img2.jpg
-│   │   │   │   │   ├── ......
-│   │   │   │   │   ├── imgn.jpg
-│   │   │   │   │   └── groundtruth_rect.txt
-│   │   │   └── vis/                    
-│   │   │       ├── video1/
-│   │   │   │   │   ├── img1.jpg        # Image files
-│   │   │   │   │   ├── img2.jpg
-│   │   │   │   │   ├── ......
-│   │   │   │   │   ├── imgn.jpg
-│   │   │       │   └── groundtruth_rect.txt
 │   │   ├── hsi/                        # HSI validation
 │   │   │   ├── nir/                    # NIR videos
 │   │   │   │   ├── video1/             # First video in NIR
