@@ -30,7 +30,7 @@ train_dataloader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 val_dataloader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 
 # Training loop
-num_epochs = 100
+num_epochs = 500
 best_val_loss = float('inf')
 for epoch in range(num_epochs):
     total_loss = 0
