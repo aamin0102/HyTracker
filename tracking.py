@@ -95,7 +95,7 @@ def train(model, criterion, optimizer, pos_feats, neg_feats, maxiter, in_layer='
 def initialize_all():
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
-                       default='weights\\best.pth', help='model.pt path(s)')
+                       default='weights\\HOT_2024.pth', help='model.pt path(s)')
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.01, help='object confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.05, help='IOU threshold for NMS')
